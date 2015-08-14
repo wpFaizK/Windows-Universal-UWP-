@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="StorageClass.StorageUsagePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StorageClass"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="12">
+            <Button  
+                            HorizontalAlignment="Stretch" 
+                            HorizontalContentAlignment="Left" 
+                            Content="Home" 
+                x:Name="AddInStorage"
+                            Click="AddInStorage_Click" />
+            <TextBlock x:Name="addTextValue"></TextBlock>
+            <Button Content="Delete" 
+                    x:Name="deleteBtn"
+                            Click="deleteBtn_Click" 
+                            HorizontalAlignment="Stretch" 
+                            HorizontalContentAlignment="Left" />
+
+            <Button Content="ShowData" 
+                    x:Name="ShowBtn"
+                            Click="ShowBtn_Click" 
+                            HorizontalAlignment="Stretch" 
+                            HorizontalContentAlignment="Left" />
+
+            <TextBlock x:Name="addTextdate"></TextBlock>
+
+            <TextBlock x:Name="addTextdate1"></TextBlock>
+            <Button x:Name="Btnlauncher"  Content="launcher "  Click="Btnlauncher_Click"></Button>
+            <Button x:Name="BtnDownload"  Content="Download "  Click="BtnDownload_Click"></Button>
+
+            <Button x:Name="BtnImageDownloader" Content="imgDownload" Click="BtnImageDownloaderClick"></Button>
+
+            <Image x:Name="downloadedImage" ></Image>
+
+
+            <Button x:Name="btnDeleteImage" Content="imgDelete" Click="btnDeleteImage_Click"></Button>
+
+        </StackPanel>
+    </Grid>
+</Page>
